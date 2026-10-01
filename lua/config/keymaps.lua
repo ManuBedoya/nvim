@@ -47,3 +47,10 @@ vim.keymap.set("n", "<leader>of", function()
 end, { desc = "Find Obsidian Notes" })
 
 vim.keymap.set("n", "<leader>oq", "<cmd>Obsidian quick_switch<CR>", { desc = "Quick Switch" })
+
+-- No sobrescribir el registro por defecto al borrar/cambiar
+vim.keymap.set({ "n", "x" }, "d", '"_d')
+vim.keymap.set("n", "dd", '"_dd')
+vim.keymap.set({ "n", "x" }, "c", '"_c')
+vim.keymap.set({ "n", "x" }, "x", '"_x')
+vim.keymap.set({ "n", "x" }, "X", '"_X')

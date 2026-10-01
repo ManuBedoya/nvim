@@ -8,3 +8,4 @@ vim.opt.guicursor = {
 }
 vim.opt.mouse = ""
 vim.g.root_spec = { "cwd", "lsp" }
+vim.opt.scrolloff = 10
